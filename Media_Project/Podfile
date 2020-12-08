@@ -8,5 +8,6 @@ target 'Media_Project' do
   # Pods for Media_Project
   pod 'Alamofire', '~> 4.8.2'
   pod 'Kingfisher', '~> 5.0'
+  pod 'appstore-card-transition'
 
 end
