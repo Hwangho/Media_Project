@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		0E34F3B7257F9FA1006AB4EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E34F3B5257F9FA1006AB4EA /* Main.storyboard */; };
 		0E34F3B9257F9FA3006AB4EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E34F3B8257F9FA3006AB4EA /* Assets.xcassets */; };
 		0E34F3BC257F9FA3006AB4EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E34F3BA257F9FA3006AB4EA /* LaunchScreen.storyboard */; };
+		0E34F3E7257FA279006AB4EA /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E34F3E6257FA279006AB4EA /* Home.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		0E34F3B8257F9FA3006AB4EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E34F3BB257F9FA3006AB4EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E34F3BD257F9FA3006AB4EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E34F3E6257FA279006AB4EA /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		70B20E25F85E3BA0884C953C /* Pods-Media_Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Media_Project.debug.xcconfig"; path = "Target Support Files/Pods-Media_Project/Pods-Media_Project.debug.xcconfig"; sourceTree = "<group>"; };
 		82C8788C813BFCFE35B42726 /* Pods_Media_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Media_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C92CC9CDEBAA3C90BB3504C0 /* Pods-Media_Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Media_Project.release.xcconfig"; path = "Target Support Files/Pods-Media_Project/Pods-Media_Project.release.xcconfig"; sourceTree = "<group>"; };
@@ -63,15 +65,168 @@
 		0E34F3AE257F9FA1006AB4EA /* Media_Project */ = {
 			isa = PBXGroup;
 			children = (
+				0E34F3B8257F9FA3006AB4EA /* Assets.xcassets */,
+				0E34F3BD257F9FA3006AB4EA /* Info.plist */,
+				0E34F3C9257FA17C006AB4EA /* Source */,
+				0E34F3CD257FA1A3006AB4EA /* Home */,
+				0E34F3CE257FA1B7006AB4EA /* Ranking */,
+				0E34F3CC257FA19A006AB4EA /* MyPage */,
+			);
+			path = Media_Project;
+			sourceTree = "<group>";
+		};
+		0E34F3C9257FA17C006AB4EA /* Source */ = {
+			isa = PBXGroup;
+			children = (
 				0E34F3AF257F9FA1006AB4EA /* AppDelegate.swift */,
 				0E34F3B1257F9FA1006AB4EA /* SceneDelegate.swift */,
 				0E34F3B3257F9FA1006AB4EA /* ViewController.swift */,
 				0E34F3B5257F9FA1006AB4EA /* Main.storyboard */,
-				0E34F3B8257F9FA3006AB4EA /* Assets.xcassets */,
 				0E34F3BA257F9FA3006AB4EA /* LaunchScreen.storyboard */,
-				0E34F3BD257F9FA3006AB4EA /* Info.plist */,
 			);
-			path = Media_Project;
+			path = Source;
+			sourceTree = "<group>";
+		};
+		0E34F3CC257FA19A006AB4EA /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				0E34F3E2257FA267006AB4EA /* Storyboard */,
+				0E34F3E1257FA267006AB4EA /* ReSource */,
+			);
+			path = MyPage;
+			sourceTree = "<group>";
+		};
+		0E34F3CD257FA1A3006AB4EA /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0E34F3CF257FA1CD006AB4EA /* Storyboard */,
+				0E34F3DB257FA250006AB4EA /* ReSource */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		0E34F3CE257FA1B7006AB4EA /* Ranking */ = {
+			isa = PBXGroup;
+			children = (
+				0E34F3DC257FA262006AB4EA /* Storyboard */,
+				0E34F3DD257FA262006AB4EA /* ReSource */,
+			);
+			path = Ranking;
+			sourceTree = "<group>";
+		};
+		0E34F3CF257FA1CD006AB4EA /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				0E34F3E6257FA279006AB4EA /* Home.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		0E34F3D0257FA1D9006AB4EA /* VC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		0E34F3D1257FA1E0006AB4EA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		0E34F3D2257FA1E7006AB4EA /* Informations */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Informations;
+			sourceTree = "<group>";
+		};
+		0E34F3DB257FA250006AB4EA /* ReSource */ = {
+			isa = PBXGroup;
+			children = (
+				0E34F3D2257FA1E7006AB4EA /* Informations */,
+				0E34F3D1257FA1E0006AB4EA /* Cells */,
+				0E34F3D0257FA1D9006AB4EA /* VC */,
+			);
+			path = ReSource;
+			sourceTree = "<group>";
+		};
+		0E34F3DC257FA262006AB4EA /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		0E34F3DD257FA262006AB4EA /* ReSource */ = {
+			isa = PBXGroup;
+			children = (
+				0E34F3DE257FA262006AB4EA /* Informations */,
+				0E34F3DF257FA262006AB4EA /* Cells */,
+				0E34F3E0257FA262006AB4EA /* VC */,
+			);
+			path = ReSource;
+			sourceTree = "<group>";
+		};
+		0E34F3DE257FA262006AB4EA /* Informations */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Informations;
+			sourceTree = "<group>";
+		};
+		0E34F3DF257FA262006AB4EA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		0E34F3E0257FA262006AB4EA /* VC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		0E34F3E1257FA267006AB4EA /* ReSource */ = {
+			isa = PBXGroup;
+			children = (
+				0E34F3E5257FA267006AB4EA /* Informations */,
+				0E34F3E3257FA267006AB4EA /* Cells */,
+				0E34F3E4257FA267006AB4EA /* VC */,
+			);
+			path = ReSource;
+			sourceTree = "<group>";
+		};
+		0E34F3E2257FA267006AB4EA /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		0E34F3E3257FA267006AB4EA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		0E34F3E4257FA267006AB4EA /* VC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		0E34F3E5257FA267006AB4EA /* Informations */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Informations;
 			sourceTree = "<group>";
 		};
 		8364C6988AC846D5A7070601 /* Pods */ = {
@@ -80,7 +235,6 @@
 				70B20E25F85E3BA0884C953C /* Pods-Media_Project.debug.xcconfig */,
 				C92CC9CDEBAA3C90BB3504C0 /* Pods-Media_Project.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -154,6 +308,7 @@
 				0E34F3BC257F9FA3006AB4EA /* LaunchScreen.storyboard in Resources */,
 				0E34F3B9257F9FA3006AB4EA /* Assets.xcassets in Resources */,
 				0E34F3B7257F9FA1006AB4EA /* Main.storyboard in Resources */,
+				0E34F3E7257FA279006AB4EA /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
