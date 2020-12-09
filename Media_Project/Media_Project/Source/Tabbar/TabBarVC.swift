@@ -13,6 +13,7 @@ class TabBarVC: UITabBarController {
         super.viewDidLoad()
         
         setTabBar()
+        self.selectedIndex = 1
     }
     
     func setTabBar() {
@@ -21,13 +22,13 @@ class TabBarVC: UITabBarController {
         
         // 1
         let Rankings = UIStoryboard.init(name: "Ranking", bundle: nil)
-        guard let firstTab = Rankings.instantiateViewController(identifier: "RankingVC")
-                as? RankingVC  else {
+        guard let firstTab = Rankings.instantiateViewController(identifier: "ViewController")
+                as? ViewController  else {
             return
         }
         firstTab.tabBarItem.title = "모아보기"
         firstTab.tabBarItem.image = UIImage(systemName: "wallet.pass")
-        firstTab.tabBarItem.selectedImage = UIImage(systemName: "wallet.pass.fill")
+        firstTab.tabBarItem.selectedImage = UIImage(systemName: "wallet.pass.fill")?.withTintColor(.thickBlue, renderingMode: .alwaysOriginal)
         
         // 2
         let Homes = UIStoryboard.init(name: "Home", bundle: nil)
@@ -37,7 +38,8 @@ class TabBarVC: UITabBarController {
         }
         second.tabBarItem.title = "홈"
         second.tabBarItem.image = UIImage(systemName: "house")
-        second.tabBarItem.selectedImage = UIImage(systemName: "house.fill")
+        second.tabBarItem.selectedImage = UIImage(systemName: "house.fill")?.withTintColor(.thickBlue, renderingMode: .alwaysOriginal)
+
         
         // 3
         let MyPage = UIStoryboard.init(name: "MyPage", bundle: nil)
@@ -47,7 +49,10 @@ class TabBarVC: UITabBarController {
         }
         thired.tabBarItem.title = "마이페이지"
         thired.tabBarItem.image = UIImage(systemName: "person")
-        thired.tabBarItem.selectedImage = UIImage(systemName: "person.fill")
+        thired.tabBarItem.selectedImage = UIImage(systemName: "person.fill")?.withTintColor(.thickBlue, renderingMode: .alwaysOriginal)
+        
+        
+
         
         let tabs =  [firstTab, second, thired]
         

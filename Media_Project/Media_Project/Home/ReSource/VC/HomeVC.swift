@@ -15,12 +15,15 @@ class HomeVC: UIViewController {
     @IBOutlet weak var reciveBussiness: UILabel!
     
     @IBOutlet weak var homeTableView: UITableView!
+    @IBOutlet weak var underLineView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         homeTableView.dataSource = self
         homeTableView.delegate = self
+        self.homeTableView.separatorStyle = UITableViewCell.SeparatorStyle.none
+
         viewradious()
     }
     
@@ -36,6 +39,7 @@ class HomeVC: UIViewController {
     
     func viewradious() {
         viewRadious.layer.cornerRadius = 23
+        underLineView.backgroundColor = UIColor.whiteBlue
     }
     
     // 버튼 눌렀을 때 view가 올라오도록
@@ -64,7 +68,7 @@ extension HomeVC: UITableViewDataSource{
 
 extension HomeVC: UITableViewDelegate{
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 90
+        return 94
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
