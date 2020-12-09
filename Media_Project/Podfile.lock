@@ -1,0 +1,26 @@
+PODS:
+  - Alamofire (4.8.2)
+  - appstore-card-transition (1.0.4)
+  - Kingfisher (5.15.8):
+    - Kingfisher/Core (= 5.15.8)
+  - Kingfisher/Core (5.15.8)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.8.2)
+  - appstore-card-transition
+  - Kingfisher (~> 5.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - appstore-card-transition
+    - Kingfisher
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  appstore-card-transition: 660c136cb8a0f0004b2e99e99f1305bfa041f05c
+  Kingfisher: a3c03d702433fa6cfedabb2bddbe076fb8f2e902
+
+PODFILE CHECKSUM: b269a0dbff5285d75203c2b223033165cc637c2d
+
+COCOAPODS: 1.9.3
