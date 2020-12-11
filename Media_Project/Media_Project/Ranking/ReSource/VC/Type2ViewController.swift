@@ -15,13 +15,15 @@ class Type2ViewController: UIViewController {
     @IBOutlet weak var subtitleLabel: UILabel!
     @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet weak var heightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var shareButton: UIButton!
     
     
-    var subtitle: String? = nil
     var background: UIImage? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setImage()
 
         view.clipsToBounds = true
         contentScrollView.delegate = self
@@ -29,16 +31,19 @@ class Type2ViewController: UIViewController {
         scrollView.contentInsetAdjustmentBehavior = .never
         
         let _ = dismissHandler
-        if let subtitle = subtitle {
-            subtitleLabel.text = subtitle
-        }
         if let background = background {
             backgroundImage.image = background
         }
         
-        heightConstraint.constant = UIScreen.main.bounds.width * 1.272 - 16.0
+        heightConstraint.constant = 232
     }
-
+    
+    func setImage(){
+        shareButton.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
+        shareButton.layer.cornerRadius = 15
+        shareButton.layer.shadowOpacity = 0.1
+        shareButton.layer.shadowRadius = 5// 퍼지는 정도
+    }
 }
 
 extension Type2ViewController: UIScrollViewDelegate {

@@ -40,7 +40,6 @@ class TabBarVC: UITabBarController {
         second.tabBarItem.image = UIImage(systemName: "house")
         second.tabBarItem.selectedImage = UIImage(systemName: "house.fill")?.withTintColor(.thickBlue, renderingMode: .alwaysOriginal)
 
-        
         // 3
         let MyPage = UIStoryboard.init(name: "MyPage", bundle: nil)
         guard let thired = MyPage.instantiateViewController(identifier: "MyPageVC")
@@ -51,14 +50,12 @@ class TabBarVC: UITabBarController {
         thired.tabBarItem.image = UIImage(systemName: "person")
         thired.tabBarItem.selectedImage = UIImage(systemName: "person.fill")?.withTintColor(.thickBlue, renderingMode: .alwaysOriginal)
         
-        
-
-        
         let tabs =  [firstTab, second, thired]
         
         tabBar.layer.shadowOpacity = 0.1
         tabBar.layer.shadowOffset = CGSize(width: 0, height: -3)
         tabBar.layer.shadowRadius = 3
+//        tabBar.backgroundColor = .clear
         self.setViewControllers(tabs, animated: false)
     }
 }

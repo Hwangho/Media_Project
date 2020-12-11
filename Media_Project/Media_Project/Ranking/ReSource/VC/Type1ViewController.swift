@@ -21,8 +21,9 @@ class Type1ViewController: UIViewController {
     var backgroundImage: UIImage? = nil
     var backgroundColor: UIColor? = nil
     
-    lazy var headerView: Type1HeaderView = {
-        let view = UINib(nibName: "Type1HeaderView", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as! Type1HeaderView
+    
+    lazy var headerView: Type1HeaderViews = {
+        let view = UINib(nibName: "Type1HeaderViews", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as! Type1HeaderViews
         
         return view
     }()
@@ -45,9 +46,10 @@ class Type1ViewController: UIViewController {
         if let backgroundImage = backgroundImage {
             headerView.backgroundImage.image = backgroundImage
         }
-        if let backgroundColor = backgroundColor {
-            coverView.backgroundColor = backgroundColor
-        }
+//        if let backgroundColor = backgroundColor {
+//            coverView.backgroundColor = backgroundColor
+//        }
+        
     }
     
     override func viewDidLayoutSubviews() {
@@ -116,11 +118,11 @@ extension Type1ViewController: CardDetailViewController {
         dismissAnimationFinishedAction?()
     }
     
-    func didChangeDismissAnimationProgress(progress: CGFloat) {
-        var progress = max(0, progress)
-        progress = min(1, progress)
-        commentCoverViewTop.constant = -58 * progress
-    }
+//    func didChangeDismissAnimationProgress(progress: CGFloat) {
+//        var progress = max(0, progress)
+//        progress = min(1, progress)
+//        commentCoverViewTop.constant = -58 * progress
+//    }
     
     func didCancelDismissAnimation(progress: CGFloat) {
         if progress < 1.0 {

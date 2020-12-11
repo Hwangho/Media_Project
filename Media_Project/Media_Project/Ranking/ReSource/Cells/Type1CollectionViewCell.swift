@@ -21,8 +21,15 @@ class Type1CollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
 
-        containerView.layer.cornerRadius = 8
+        containerView.layer.cornerRadius = 15
         containerView.clipsToBounds = true
+        containerView.backgroundColor = .white
+        
+        layer.shadowColor = UIColor.black.cgColor
+        layer.shadowOpacity = 0.2
+        layer.shadowOffset = .init(width: 0, height: 0)
+        layer.shadowRadius = 8
+        
     }
 
     // Make it appears very responsive to touch
