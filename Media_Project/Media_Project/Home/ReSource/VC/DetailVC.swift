@@ -15,10 +15,22 @@ class DetailVC: UIViewController {
     @IBOutlet weak var termView: UIView!
     @IBOutlet weak var targetView: UIView!
     
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var organizeText: UILabel!
+    @IBOutlet weak var nameText: UILabel!
+    @IBOutlet weak var dateText: UILabel!
+    
+    var image : String?
+    var organize: String?
+    var name: String?
+    var date: String?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setImage()
+        updateUI()
     }
     
     @IBAction func backPressButton(_ sender: Any) {
@@ -33,6 +45,15 @@ class DetailVC: UIViewController {
         
         termView.backgroundColor = UIColor.whiteBlue
         targetView.backgroundColor = UIColor.whiteBlue
+    }
+    
+    func updateUI(){
+        if let image = self.image, let organize = self.organize, let name = self.name, let date = self.date{
+            self.imageView.image = UIImage(named: image)
+            self.organizeText.text = organize
+            self.nameText.text = name
+            self.dateText.text = date
+        }
     }
 
     @IBAction func submitPressButton(_ sender: Any) {

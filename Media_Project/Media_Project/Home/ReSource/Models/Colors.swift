@@ -29,4 +29,8 @@ extension UIColor {
     @nonobjc class var checkBoxBlue: UIColor {
         return UIColor(red:  14.0 / 255.0, green: 136.0 / 255.0, blue:  255.0 / 255.0, alpha: 1.0)
     }
+    
+    @nonobjc class var submitBlue: UIColor {
+        return UIColor(red:  210.0 / 255.0, green: 226.0 / 255.0, blue:  241.0 / 255.0, alpha: 1.0)
+    }
 }
