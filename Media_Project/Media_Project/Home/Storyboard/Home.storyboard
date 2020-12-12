@@ -201,7 +201,7 @@
                                         <rect key="frame" x="0.0" y="59" width="375" height="396"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="90" id="xHu-hO-SAO">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="HomeAlreadySubmitTVCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeAlreadySubmitTVCell" rowHeight="90" id="xHu-hO-SAO" customClass="HomeAlreadySubmitTVCell" customModule="Media_Project" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="375" height="90"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xHu-hO-SAO" id="B09-K3-PCN">
@@ -262,11 +262,11 @@
                                                     </constraints>
                                                 </tableViewCellContentView>
                                                 <connections>
-                                                    <outlet property="businessImage" destination="WAc-Ta-ZVV" id="k6g-1I-iLF"/>
+                                                    <outlet property="businessImage" destination="WAc-Ta-ZVV" id="fdM-tC-WBR"/>
                                                     <outlet property="cellView" destination="82d-4b-Y06" id="89F-Ut-uKl"/>
-                                                    <outlet property="dateText" destination="K4z-1B-kYR" id="eBI-IE-0tt"/>
-                                                    <outlet property="nameText" destination="fgw-Gi-2hZ" id="mFB-t6-bjh"/>
-                                                    <outlet property="organizeText" destination="A0O-J7-gAR" id="5TZ-iD-0S8"/>
+                                                    <outlet property="dateText" destination="K4z-1B-kYR" id="hTK-d6-05t"/>
+                                                    <outlet property="nameText" destination="fgw-Gi-2hZ" id="yES-Sd-G05"/>
+                                                    <outlet property="organizeText" destination="A0O-J7-gAR" id="yds-kM-bZu"/>
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>

@@ -37,6 +37,7 @@
 		0E6FBD8B258227220044CB53 /* Type1HeaderViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6FBD8A258227220044CB53 /* Type1HeaderViews.swift */; };
 		0E6FBD90258345180044CB53 /* HomeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6FBD8F258345180044CB53 /* HomeInfo.swift */; };
 		0E6FBD932583689B0044CB53 /* AleadySubmitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6FBD922583689B0044CB53 /* AleadySubmitVC.swift */; };
+		0E6FBD962584BEB70044CB53 /* HomeAlreadySubmitTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6FBD952584BEB70044CB53 /* HomeAlreadySubmitTVCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +72,7 @@
 		0E6FBD8A258227220044CB53 /* Type1HeaderViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type1HeaderViews.swift; sourceTree = "<group>"; };
 		0E6FBD8F258345180044CB53 /* HomeInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInfo.swift; sourceTree = "<group>"; };
 		0E6FBD922583689B0044CB53 /* AleadySubmitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AleadySubmitVC.swift; sourceTree = "<group>"; };
+		0E6FBD952584BEB70044CB53 /* HomeAlreadySubmitTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAlreadySubmitTVCell.swift; sourceTree = "<group>"; };
 		70B20E25F85E3BA0884C953C /* Pods-Media_Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Media_Project.debug.xcconfig"; path = "Target Support Files/Pods-Media_Project/Pods-Media_Project.debug.xcconfig"; sourceTree = "<group>"; };
 		82C8788C813BFCFE35B42726 /* Pods_Media_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Media_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C92CC9CDEBAA3C90BB3504C0 /* Pods-Media_Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Media_Project.release.xcconfig"; path = "Target Support Files/Pods-Media_Project/Pods-Media_Project.release.xcconfig"; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				0E34F3FC257FB49F006AB4EA /* HomeSubmitPossibleTVCell.swift */,
+				0E6FBD952584BEB70044CB53 /* HomeAlreadySubmitTVCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -459,6 +462,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E34F3F0257FA57C006AB4EA /* Colors.swift in Sources */,
+				0E6FBD962584BEB70044CB53 /* HomeAlreadySubmitTVCell.swift in Sources */,
 				0E6FBD5C257FFAF70044CB53 /* Type1CollectionViewCell.swift in Sources */,
 				0E6FBD60257FFB120044CB53 /* Type2CollectionViewCell.swift in Sources */,
 				0E34F3EC257FA351006AB4EA /* HomeVC.swift in Sources */,

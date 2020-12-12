@@ -30,6 +30,10 @@ class HomeVC: UIViewController {
 
         homeTableView.dataSource = self
         homeTableView.delegate = self
+        
+        alreadyTableView.dataSource = self
+        alreadyTableView.delegate = self
+        
         self.homeTableView.separatorStyle = UITableViewCell.SeparatorStyle.none
         
         initPosition()
@@ -52,6 +56,7 @@ class HomeVC: UIViewController {
         // sender의 view는 sender가 바라보고 있는 circleView이다. 드래그로 이동한 만큼 circleView를 이동시킨다.
             guesture.view!.center = CGPoint(x: guesture.view!.center.x, y: guesture.view!.center.y + translation.y)
             guesture.setTranslation(.zero, in: self.view) // 0으로 움직인 값을 초기화 시켜준다.
+        
         if alearySubmitView.frame.origin.y < 293 {
             alearySubmitView.center.y = 292
             guesture.setTranslation(.zero, in: self.view)
@@ -102,6 +107,10 @@ class HomeVC: UIViewController {
         alreadyUnderLineView.backgroundColor = .white
         alearySubmitView.backgroundColor = UIColor.submitBlue
         alreadyTableView.backgroundColor = UIColor.submitBlue
+        
+        alearySubmitView.layer.cornerRadius = 23
+        alearySubmitView.layer.shadowOffset = CGSize(width: 0, height: 0)
+        alearySubmitView.layer.shadowRadius = 20
     }
     
     // 버튼 눌렀을 때 view가 올라오도록
@@ -128,19 +137,40 @@ class HomeVC: UIViewController {
 
 extension HomeVC: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return informations.count
+        if tableView == homeTableView {
+            return informations.count
+        } else if tableView == alreadyTableView {
+            return informations.count
+        } else{
+            return 0
+        }
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = homeTableView.dequeueReusableCell(withIdentifier: HomeSubmitPossibleTVCell.identifier, for: indexPath) as? HomeSubmitPossibleTVCell else {return UITableViewCell() }
-        
-        cell.setinfo(image: informations[indexPath.row].image, organize: informations[indexPath.row].organize, name: informations[indexPath.row].name, date: informations[indexPath.row].name)
-        
+
         let backgroundView = UIView()
         backgroundView.backgroundColor = UIColor.clear
-        cell.selectedBackgroundView = backgroundView
         
-        return cell
+        if tableView == homeTableView {
+            guard let cell = homeTableView.dequeueReusableCell(withIdentifier: HomeSubmitPossibleTVCell.identifier, for: indexPath) as? HomeSubmitPossibleTVCell else {return UITableViewCell() }
+            
+            cell.setinfo(image: informations[indexPath.row].image, organize: informations[indexPath.row].organize, name: informations[indexPath.row].name, date: informations[indexPath.row].name)
+            cell.selectedBackgroundView = backgroundView
+            
+            return cell
+        }
+        else if tableView == alreadyTableView {
+            guard  let cell2 = alreadyTableView.dequeueReusableCell(withIdentifier: HomeAlreadySubmitTVCell.identifier, for: indexPath) as? HomeAlreadySubmitTVCell else {
+                return UITableViewCell() }
+            
+            cell2.setinfo(image: informations[indexPath.row].image, organize: informations[indexPath.row].organize, name: informations[indexPath.row].name, date: informations[indexPath.row].name)
+            cell2.selectedBackgroundView = backgroundView
+            cell2.backgroundColor = UIColor.skyBlue
+            return cell2
+        } else{
+            return UITableViewCell()
+        }
     }
 }
 
