@@ -109,8 +109,8 @@ class HomeVC: UIViewController {
         alreadyTableView.backgroundColor = UIColor.submitBlue
         
         alearySubmitView.layer.cornerRadius = 23
-        alearySubmitView.layer.shadowOffset = CGSize(width: 0, height: 0)
-        alearySubmitView.layer.shadowRadius = 20
+//        alearySubmitView.layer.shadowOffset = CGSize(width: 0, height: 0)
+//        alearySubmitView.layer.shadowRadius = 20
     }
     
     // 버튼 눌렀을 때 view가 올라오도록
