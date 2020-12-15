@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FFM-KY-3xe">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--On BoardingNVC-->
+        <scene sceneID="5de-Gr-TYC">
+            <objects>
+                <navigationController storyboardIdentifier="OnBoardingNVC" navigationBarHidden="YES" id="FFM-KY-3xe" customClass="OnBoardingNVC" customModule="Media_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="na9-u6-768">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="br6-3R-9KO" kind="relationship" relationship="rootViewController" id="U5y-dg-lM4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2gt-29-sOY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-570" y="-9"/>
+        </scene>
+        <!--On Boarding1VC-->
+        <scene sceneID="III-sk-Cti">
+            <objects>
+                <viewController storyboardIdentifier="onBoarding1VC" id="br6-3R-9KO" customClass="onBoarding1VC" customModule="Media_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hYm-rg-J1d">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4235" translatesAutoresizingMaskIntoConstraints="NO" id="TCE-D7-M51">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lff-6g-RaC">
+                                <rect key="frame" x="317" y="586" width="22" height="31"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="chevron.right" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30"/>
+                                </state>
+                                <connections>
+                                    <segue destination="HCI-wb-GON" kind="show" id="soa-p7-0Yq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0wN-as-vwU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TCE-D7-M51" firstAttribute="leading" secondItem="0wN-as-vwU" secondAttribute="leading" id="Hi5-bX-sEl"/>
+                            <constraint firstItem="0wN-as-vwU" firstAttribute="bottom" secondItem="lff-6g-RaC" secondAttribute="bottom" constant="50" id="V1P-Su-1Du"/>
+                            <constraint firstItem="0wN-as-vwU" firstAttribute="trailing" secondItem="lff-6g-RaC" secondAttribute="trailing" constant="36" id="bL0-dW-i5d"/>
+                            <constraint firstItem="0wN-as-vwU" firstAttribute="trailing" secondItem="TCE-D7-M51" secondAttribute="trailing" id="kvW-du-5N7"/>
+                            <constraint firstItem="0wN-as-vwU" firstAttribute="bottom" secondItem="TCE-D7-M51" secondAttribute="bottom" id="nBg-sq-uIs"/>
+                            <constraint firstItem="TCE-D7-M51" firstAttribute="top" secondItem="0wN-as-vwU" secondAttribute="top" id="u0T-iM-7Qu"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="sxY-dM-1Ji"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OaY-GC-Xck" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="222" y="-9"/>
+        </scene>
+        <!--OnBoardingVC-->
+        <scene sceneID="glr-Ro-jJ5">
+            <objects>
+                <viewController storyboardIdentifier="OnBoardingVC" title="OnBoardingVC" id="HCI-wb-GON" customClass="OnBoardingVC" customModule="Media_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6RX-JI-9MH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2E4-Gf-JBu">
+                                <rect key="frame" x="65.5" y="152" width="244" height="13"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="13" id="bgC-cF-MSL"/>
+                                    <constraint firstAttribute="width" constant="244" id="rgb-oP-q8N"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyData 이용 동의" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8RA-TL-aI9">
+                                <rect key="frame" x="87" y="132" width="201" height="33"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="개인정보 이용에 동의합니다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EPO-Jx-Xll">
+                                <rect key="frame" x="114.5" y="171" width="146" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" systemColor="systemGray2Color"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="국세청 데이터 이용동의" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kSG-mg-2RJ">
+                                <rect key="frame" x="92" y="233" width="165" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DS6-ej-5Od">
+                                <rect key="frame" x="60" y="232.5" width="20" height="22"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="checkmark.square" catalog="system"/>
+                                <state key="selected" image="checkmark.square.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="checkBox1PressButton:" destination="HCI-wb-GON" eventType="touchUpInside" id="308-AO-TNI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EsX-db-G1G">
+                                <rect key="frame" x="300" y="244" width="20" height="22"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="plus.circle" catalog="system"/>
+                                <connections>
+                                    <segue destination="uYS-IP-lRk" kind="presentation" id="TPa-2L-yJp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="사업자등록, 현금영수증, 전자세금계산서, 원천세, 부가가치세, 종합소득세, 양도소득세 등 " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P8y-Mz-Fsg">
+                                <rect key="frame" x="88" y="258.5" width="189" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="189" id="ILY-SO-LSI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="국세청 데이터 이용동의" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9WE-IV-zgt">
+                                <rect key="frame" x="92" y="321.5" width="165" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F2F-7p-AGe">
+                                <rect key="frame" x="60" y="321" width="20" height="22"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="checkmark.square" catalog="system"/>
+                                <state key="selected" image="checkmark.square.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="checkBox2PressButton:" destination="HCI-wb-GON" eventType="touchUpInside" id="DC1-XK-ngk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zAb-4U-NCJ">
+                                <rect key="frame" x="300" y="336" width="20" height="22"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="plus.circle" catalog="system"/>
+                                <connections>
+                                    <segue destination="UAM-jX-5nc" kind="presentation" id="kv1-1i-s9M"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="사업자등록, 현금영수증, 전자세금계산서, 원천세, 부가가치세, 종합소득세, 양도소득세 등 " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UOT-IQ-Ivl">
+                                <rect key="frame" x="88" y="347" width="189" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="189" id="phG-l8-xcZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="국세청 데이터 이용동의" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OHE-kn-5Yc">
+                                <rect key="frame" x="92" y="410" width="165" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yFg-Hj-Pjd">
+                                <rect key="frame" x="60" y="409.5" width="20" height="22"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="checkmark.square" catalog="system"/>
+                                <state key="selected" image="checkmark.square.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="checkBox3PressButton:" destination="HCI-wb-GON" eventType="touchUpInside" id="SjS-k1-7T3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UBb-bo-qBo">
+                                <rect key="frame" x="300" y="428" width="20" height="22"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="plus.circle" catalog="system"/>
+                                <connections>
+                                    <segue destination="oRu-yJ-sVg" kind="presentation" id="zVh-vC-7wF"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="사업자등록, 현금영수증, 전자세금계산서, 원천세, 부가가치세, 종합소득세, 양도소득세 등 " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HGf-sb-P95">
+                                <rect key="frame" x="88" y="435.5" width="189" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="189" id="hCB-DJ-GIN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oOT-AY-qsW">
+                                <rect key="frame" x="121.5" y="519.5" width="132" height="37"/>
+                                <color key="backgroundColor" red="0.0" green="0.2156862745" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="3Rc-5A-JnW"/>
+                                    <constraint firstAttribute="width" constant="132" id="JyH-Qp-tKB"/>
+                                </constraints>
+                                <state key="normal" title="확인">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="okPressButton:" destination="HCI-wb-GON" eventType="touchUpInside" id="35L-S8-vXz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="x6m-si-4S7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DS6-ej-5Od" firstAttribute="centerY" secondItem="kSG-mg-2RJ" secondAttribute="centerY" id="2Ua-4F-Kh5"/>
+                            <constraint firstItem="2E4-Gf-JBu" firstAttribute="bottom" secondItem="8RA-TL-aI9" secondAttribute="bottom" id="4Is-yE-21W"/>
+                            <constraint firstItem="F2F-7p-AGe" firstAttribute="centerY" secondItem="9WE-IV-zgt" secondAttribute="centerY" id="4ZQ-dd-Gfc"/>
+                            <constraint firstItem="zAb-4U-NCJ" firstAttribute="leading" secondItem="UOT-IQ-Ivl" secondAttribute="trailing" constant="23" id="9fA-yj-12n"/>
+                            <constraint firstItem="EsX-db-G1G" firstAttribute="leading" secondItem="kSG-mg-2RJ" secondAttribute="trailing" constant="43" id="9hI-yC-xB8"/>
+                            <constraint firstItem="OHE-kn-5Yc" firstAttribute="top" secondItem="UOT-IQ-Ivl" secondAttribute="bottom" constant="39" id="AZz-qr-gGo"/>
+                            <constraint firstItem="EPO-Jx-Xll" firstAttribute="top" secondItem="2E4-Gf-JBu" secondAttribute="bottom" constant="6" id="BQv-6G-M9L"/>
+                            <constraint firstItem="F2F-7p-AGe" firstAttribute="leading" secondItem="DS6-ej-5Od" secondAttribute="leading" id="BRT-Nv-Ica"/>
+                            <constraint firstItem="zAb-4U-NCJ" firstAttribute="leading" secondItem="9WE-IV-zgt" secondAttribute="trailing" constant="43" id="Cch-Wl-ErD"/>
+                            <constraint firstItem="oOT-AY-qsW" firstAttribute="top" secondItem="HGf-sb-P95" secondAttribute="bottom" constant="60" id="D0f-iA-AkM"/>
+                            <constraint firstItem="HGf-sb-P95" firstAttribute="top" secondItem="yFg-Hj-Pjd" secondAttribute="bottom" constant="4" id="Jll-LL-VzC"/>
+                            <constraint firstItem="OHE-kn-5Yc" firstAttribute="leading" secondItem="yFg-Hj-Pjd" secondAttribute="trailing" constant="12" id="Kjj-D0-i3a"/>
+                            <constraint firstItem="UOT-IQ-Ivl" firstAttribute="top" secondItem="F2F-7p-AGe" secondAttribute="bottom" constant="4" id="Kne-9J-rAa"/>
+                            <constraint firstItem="yFg-Hj-Pjd" firstAttribute="centerY" secondItem="OHE-kn-5Yc" secondAttribute="centerY" id="L6p-81-1hm"/>
+                            <constraint firstItem="2E4-Gf-JBu" firstAttribute="centerX" secondItem="8RA-TL-aI9" secondAttribute="centerX" id="Ojf-p9-2JH"/>
+                            <constraint firstItem="kSG-mg-2RJ" firstAttribute="top" secondItem="EPO-Jx-Xll" secondAttribute="bottom" constant="46" id="aQa-sQ-Oc0"/>
+                            <constraint firstItem="UBb-bo-qBo" firstAttribute="top" secondItem="zAb-4U-NCJ" secondAttribute="bottom" constant="70" id="aYh-O8-4nD"/>
+                            <constraint firstItem="zAb-4U-NCJ" firstAttribute="top" secondItem="EsX-db-G1G" secondAttribute="bottom" constant="70" id="eyc-J7-Irx"/>
+                            <constraint firstItem="UBb-bo-qBo" firstAttribute="leading" secondItem="HGf-sb-P95" secondAttribute="trailing" constant="23" id="ffp-W1-E05"/>
+                            <constraint firstItem="9WE-IV-zgt" firstAttribute="top" secondItem="P8y-Mz-Fsg" secondAttribute="bottom" constant="39" id="jIp-tu-YU1"/>
+                            <constraint firstItem="8RA-TL-aI9" firstAttribute="top" secondItem="x6m-si-4S7" secondAttribute="top" constant="132" id="ndX-87-bTp"/>
+                            <constraint firstItem="DS6-ej-5Od" firstAttribute="leading" secondItem="x6m-si-4S7" secondAttribute="leading" constant="60" id="npv-sX-axk"/>
+                            <constraint firstItem="P8y-Mz-Fsg" firstAttribute="top" secondItem="DS6-ej-5Od" secondAttribute="bottom" constant="4" id="prv-gZ-gjK"/>
+                            <constraint firstItem="9WE-IV-zgt" firstAttribute="leading" secondItem="F2F-7p-AGe" secondAttribute="trailing" constant="12" id="qLI-j8-XFN"/>
+                            <constraint firstItem="oOT-AY-qsW" firstAttribute="centerX" secondItem="6RX-JI-9MH" secondAttribute="centerX" id="qhj-2Y-Ffh"/>
+                            <constraint firstItem="yFg-Hj-Pjd" firstAttribute="leading" secondItem="F2F-7p-AGe" secondAttribute="leading" id="rp3-xO-ESa"/>
+                            <constraint firstItem="UBb-bo-qBo" firstAttribute="leading" secondItem="OHE-kn-5Yc" secondAttribute="trailing" constant="43" id="uAd-bn-Lvq"/>
+                            <constraint firstItem="EsX-db-G1G" firstAttribute="top" secondItem="2E4-Gf-JBu" secondAttribute="bottom" constant="79" id="vic-nt-kSs"/>
+                            <constraint firstItem="8RA-TL-aI9" firstAttribute="centerX" secondItem="6RX-JI-9MH" secondAttribute="centerX" id="wMn-ad-ZKS"/>
+                            <constraint firstItem="EPO-Jx-Xll" firstAttribute="centerX" secondItem="2E4-Gf-JBu" secondAttribute="centerX" id="wYG-nt-BAP"/>
+                            <constraint firstItem="kSG-mg-2RJ" firstAttribute="leading" secondItem="DS6-ej-5Od" secondAttribute="trailing" constant="12" id="xXy-0C-dPX"/>
+                            <constraint firstItem="EsX-db-G1G" firstAttribute="leading" secondItem="P8y-Mz-Fsg" secondAttribute="trailing" constant="23" id="xj6-vn-Lpq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="PvV-Zq-zVc"/>
+                    <connections>
+                        <outlet property="checkBox1" destination="DS6-ej-5Od" id="Gzr-qh-JLe"/>
+                        <outlet property="checkBox2" destination="F2F-7p-AGe" id="Bd1-fR-boF"/>
+                        <outlet property="checkBox3" destination="yFg-Hj-Pjd" id="rnT-Qd-YJa"/>
+                        <outlet property="okButton" destination="oOT-AY-qsW" id="aPy-SI-VfT"/>
+                        <outlet property="underLineView" destination="2E4-Gf-JBu" id="A83-Rk-aQJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jHh-zF-fSS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1017" y="-9"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="C36-dS-Kx2">
+            <objects>
+                <viewController id="UAM-jX-5nc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q2C-fO-TsN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vfA-nQ-Zl5">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9K4-7b-QIA">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="823.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="국세청 데이터 이용동의" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wUf-Re-H6h">
+                                                <rect key="frame" x="105" y="23" width="165" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1QQ-tF-RQF">
+                                                <rect key="frame" x="285" y="22.5" width="20" height="22"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" image="minus.circle" catalog="system"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KhP-Qp-Fvq">
+                                                <rect key="frame" x="32" y="69.5" width="311" height="674"/>
+                                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="674" id="N3P-AM-Lz0"/>
+                                                    <constraint firstAttribute="width" constant="311" id="oOd-ZC-yCL"/>
+                                                </constraints>
+                                                <mutableString key="text">알지에서는 국세청과 관련하여 ｢개인정보보호법」제15조 제1항 제1호, 제17조 제1항 제1호, 제23조 제1호, 제24조 제1항 제1호 및「신용정보의 이용 및 보호에 관한 법률」제32조제1항, 제33조, 제34조에 따라 아래와 같이 개인정보의 이용 및 제3자 제공에 관하여 귀하의 동의를 얻고자 합니다.
+
+1. 개인정보 이용에 관한 사항
+
+□ 개인정보 이용 목적
+알지 어플리케이션과 관련한 운영·관리를 목적으로 합니다.
+
+□ 이용할 항목
+사업자등록, 현금영수증, 전자세금계산서, 원천세, 부가가치세, 종합소득세, 양도소득세, 종합부동산세, 근로/자녀 장려금, 모의계산, 민원증명, 소비제세, 공익법인공시, 연말정산간소화, 법인세, 수출실적명세서, 증여세, 신용카드 매출자료, 현지기업고유번호, 구매확인서, 주류면서상태, 민간보조금  
+
+□ 보유‧이용기간
+ 위 개인정보는 수집‧이용에 관한 동의일로부터 보유목적 달성 시 또는 정보주체가 개인정보 삭제를 요청할 경우 지체 없이 파기합니다. 
+ 단, 사업 종료일 후에는 향후 정부지원사업 신청 시의 이력관리만을 위하여 보유‧이용되며 기간은 1년입니다.(공공기록물 관리에 관한 법률 시행령)
+
+□ 동의를 거부할 권리 및 동의를 거부할 경우의 불이익
+ 위 개인정보 중 필수항목의 수집‧이용에 관한 동의는 본사업의 수행을 위해 필수적이므로 이에 동의하셔야 이후 절차를 진행할 수 있습니다. 다만 동의하지 않으시는 경우 본 지원사업에 신청이 불가합니다.
+
+2. 제3자 제공에 관한 사항
+
+□ 제공받는 자
+ 알지, 정부지원사업 운영처
+
+□ 제공받는 자의 이용 목적
+ 이용자의 정부 지원 사업 지원
+
+□ 제공할 개인정보의 항목
+ 수집·이용에 동의한 정보 중 위탁업무 목적달성을 위해 필요한 정보에 한함
+
+□ 제공받은 자의 개인 정보 보유‧이용 기간
+ 위 개인정보는 제공된 날부터 1년간 보유·이용되며 보유목적 달성 시 또는 정보주체가 개인정보 삭제를 요청할 경우 지체 없이 파기합니다.
+
+□ 동의를 거부할 권리 및 동의를 거부할 경우의 불이익
+ 위 개인정보의 제공 동의를 거부할 권리가 있으며, 동의를 거부 시 본 지원사업에 신청이 불가합니다. </mutableString>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="1QQ-tF-RQF" firstAttribute="leading" secondItem="wUf-Re-H6h" secondAttribute="trailing" constant="15" id="2yc-zq-mFB"/>
+                                            <constraint firstItem="1QQ-tF-RQF" firstAttribute="centerY" secondItem="wUf-Re-H6h" secondAttribute="centerY" id="H0n-bV-bDQ"/>
+                                            <constraint firstItem="wUf-Re-H6h" firstAttribute="top" secondItem="9K4-7b-QIA" secondAttribute="top" constant="23" id="cJ1-X9-XdW"/>
+                                            <constraint firstItem="KhP-Qp-Fvq" firstAttribute="centerX" secondItem="9K4-7b-QIA" secondAttribute="centerX" id="lNY-ag-lJp"/>
+                                            <constraint firstAttribute="bottom" secondItem="KhP-Qp-Fvq" secondAttribute="bottom" constant="80" id="pKB-Jp-65U"/>
+                                            <constraint firstItem="KhP-Qp-Fvq" firstAttribute="top" secondItem="1QQ-tF-RQF" secondAttribute="bottom" constant="25" id="pep-7m-Jem"/>
+                                            <constraint firstItem="wUf-Re-H6h" firstAttribute="centerX" secondItem="9K4-7b-QIA" secondAttribute="centerX" id="yBa-Di-NmB"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="9K4-7b-QIA" firstAttribute="top" secondItem="vfA-nQ-Zl5" secondAttribute="top" id="K8J-gW-g7Q"/>
+                                    <constraint firstAttribute="trailing" secondItem="9K4-7b-QIA" secondAttribute="trailing" id="OiF-vy-QP8"/>
+                                    <constraint firstItem="9K4-7b-QIA" firstAttribute="height" secondItem="vfA-nQ-Zl5" secondAttribute="height" priority="250" id="Q7H-Dr-v0T"/>
+                                    <constraint firstAttribute="bottom" secondItem="9K4-7b-QIA" secondAttribute="bottom" id="QYV-mk-Yho"/>
+                                    <constraint firstItem="9K4-7b-QIA" firstAttribute="leading" secondItem="vfA-nQ-Zl5" secondAttribute="leading" id="or7-Ox-Nrb"/>
+                                    <constraint firstItem="9K4-7b-QIA" firstAttribute="width" secondItem="vfA-nQ-Zl5" secondAttribute="width" id="prX-c1-0b3"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PHb-3Q-wqv"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vfA-nQ-Zl5" firstAttribute="trailing" secondItem="PHb-3Q-wqv" secondAttribute="trailing" id="27p-Of-Hus"/>
+                            <constraint firstItem="vfA-nQ-Zl5" firstAttribute="top" secondItem="PHb-3Q-wqv" secondAttribute="top" id="KDA-Vp-mgX"/>
+                            <constraint firstItem="vfA-nQ-Zl5" firstAttribute="bottom" secondItem="PHb-3Q-wqv" secondAttribute="bottom" id="n2d-LY-SGg"/>
+                            <constraint firstItem="vfA-nQ-Zl5" firstAttribute="leading" secondItem="PHb-3Q-wqv" secondAttribute="leading" id="qHu-bQ-PGU"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xzi-ct-3p3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2057" y="-9"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Hne-Ia-VKy">
+            <objects>
+                <viewController id="oRu-yJ-sVg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hN9-5R-G4i">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SuU-cD-sgf">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i4l-7L-Vt7">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="823.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="국세청 데이터 이용동의" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OPG-d0-pQm">
+                                                <rect key="frame" x="105" y="23" width="165" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="15C-DX-MRz">
+                                                <rect key="frame" x="285" y="22.5" width="20" height="22"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" image="minus.circle" catalog="system"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uKg-CD-NUe">
+                                                <rect key="frame" x="32" y="69.5" width="311" height="674"/>
+                                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="674" id="hY4-kZ-UXM"/>
+                                                    <constraint firstAttribute="width" constant="311" id="kFk-UT-c1Q"/>
+                                                </constraints>
+                                                <mutableString key="text">알지에서는 국세청과 관련하여 ｢개인정보보호법」제15조 제1항 제1호, 제17조 제1항 제1호, 제23조 제1호, 제24조 제1항 제1호 및「신용정보의 이용 및 보호에 관한 법률」제32조제1항, 제33조, 제34조에 따라 아래와 같이 개인정보의 이용 및 제3자 제공에 관하여 귀하의 동의를 얻고자 합니다.
+
+1. 개인정보 이용에 관한 사항
+
+□ 개인정보 이용 목적
+알지 어플리케이션과 관련한 운영·관리를 목적으로 합니다.
+
+□ 이용할 항목
+사업자등록, 현금영수증, 전자세금계산서, 원천세, 부가가치세, 종합소득세, 양도소득세, 종합부동산세, 근로/자녀 장려금, 모의계산, 민원증명, 소비제세, 공익법인공시, 연말정산간소화, 법인세, 수출실적명세서, 증여세, 신용카드 매출자료, 현지기업고유번호, 구매확인서, 주류면서상태, 민간보조금  
+
+□ 보유‧이용기간
+ 위 개인정보는 수집‧이용에 관한 동의일로부터 보유목적 달성 시 또는 정보주체가 개인정보 삭제를 요청할 경우 지체 없이 파기합니다. 
+ 단, 사업 종료일 후에는 향후 정부지원사업 신청 시의 이력관리만을 위하여 보유‧이용되며 기간은 1년입니다.(공공기록물 관리에 관한 법률 시행령)
+
+□ 동의를 거부할 권리 및 동의를 거부할 경우의 불이익
+ 위 개인정보 중 필수항목의 수집‧이용에 관한 동의는 본사업의 수행을 위해 필수적이므로 이에 동의하셔야 이후 절차를 진행할 수 있습니다. 다만 동의하지 않으시는 경우 본 지원사업에 신청이 불가합니다.
+
+2. 제3자 제공에 관한 사항
+
+□ 제공받는 자
+ 알지, 정부지원사업 운영처
+
+□ 제공받는 자의 이용 목적
+ 이용자의 정부 지원 사업 지원
+
+□ 제공할 개인정보의 항목
+ 수집·이용에 동의한 정보 중 위탁업무 목적달성을 위해 필요한 정보에 한함
+
+□ 제공받은 자의 개인 정보 보유‧이용 기간
+ 위 개인정보는 제공된 날부터 1년간 보유·이용되며 보유목적 달성 시 또는 정보주체가 개인정보 삭제를 요청할 경우 지체 없이 파기합니다.
+
+□ 동의를 거부할 권리 및 동의를 거부할 경우의 불이익
+ 위 개인정보의 제공 동의를 거부할 권리가 있으며, 동의를 거부 시 본 지원사업에 신청이 불가합니다. </mutableString>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="15C-DX-MRz" firstAttribute="leading" secondItem="OPG-d0-pQm" secondAttribute="trailing" constant="15" id="DWj-Ib-yrB"/>
+                                            <constraint firstItem="15C-DX-MRz" firstAttribute="centerY" secondItem="OPG-d0-pQm" secondAttribute="centerY" id="MN5-lX-sp9"/>
+                                            <constraint firstItem="OPG-d0-pQm" firstAttribute="top" secondItem="i4l-7L-Vt7" secondAttribute="top" constant="23" id="gSQ-eh-wbn"/>
+                                            <constraint firstItem="OPG-d0-pQm" firstAttribute="centerX" secondItem="i4l-7L-Vt7" secondAttribute="centerX" id="gn8-vJ-Ncx"/>
+                                            <constraint firstAttribute="bottom" secondItem="uKg-CD-NUe" secondAttribute="bottom" constant="80" id="l74-ge-kBU"/>
+                                            <constraint firstItem="uKg-CD-NUe" firstAttribute="centerX" secondItem="i4l-7L-Vt7" secondAttribute="centerX" id="o0g-fd-Xha"/>
+                                            <constraint firstItem="uKg-CD-NUe" firstAttribute="top" secondItem="15C-DX-MRz" secondAttribute="bottom" constant="25" id="zbI-t7-0DR"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="i4l-7L-Vt7" firstAttribute="height" secondItem="SuU-cD-sgf" secondAttribute="height" priority="250" id="Beg-2I-Gbe"/>
+                                    <constraint firstItem="i4l-7L-Vt7" firstAttribute="leading" secondItem="SuU-cD-sgf" secondAttribute="leading" id="KoI-0n-Wxf"/>
+                                    <constraint firstItem="i4l-7L-Vt7" firstAttribute="top" secondItem="SuU-cD-sgf" secondAttribute="top" id="OdW-pP-sR8"/>
+                                    <constraint firstAttribute="trailing" secondItem="i4l-7L-Vt7" secondAttribute="trailing" id="hCH-bI-jpE"/>
+                                    <constraint firstAttribute="bottom" secondItem="i4l-7L-Vt7" secondAttribute="bottom" id="sJj-YQ-6bP"/>
+                                    <constraint firstItem="i4l-7L-Vt7" firstAttribute="width" secondItem="SuU-cD-sgf" secondAttribute="width" id="u28-5d-fvr"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="54b-TZ-Cmu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="54b-TZ-Cmu" firstAttribute="bottom" secondItem="SuU-cD-sgf" secondAttribute="bottom" id="Auf-rK-PTu"/>
+                            <constraint firstItem="SuU-cD-sgf" firstAttribute="leading" secondItem="hN9-5R-G4i" secondAttribute="leading" id="dwg-fv-dt3"/>
+                            <constraint firstItem="54b-TZ-Cmu" firstAttribute="trailing" secondItem="SuU-cD-sgf" secondAttribute="trailing" id="q9y-eS-TB6"/>
+                            <constraint firstItem="SuU-cD-sgf" firstAttribute="top" secondItem="hN9-5R-G4i" secondAttribute="top" id="vU7-kI-pbe"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eo4-R6-0LR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2057" y="764"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="UrF-O2-JCb">
+            <objects>
+                <viewController id="uYS-IP-lRk" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5UG-uE-ddp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T1P-zF-h3J">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RgY-Wb-25O">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="894"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="국세청 데이터 이용동의" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TOs-4d-6R7">
+                                                <rect key="frame" x="105" y="23" width="165" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XTc-8o-oSB">
+                                                <rect key="frame" x="285" y="22.5" width="20" height="22"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" image="minus.circle" catalog="system"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tJF-kE-Wgt">
+                                                <rect key="frame" x="32" y="69" width="311" height="745"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="311" id="4e6-Ke-GcL"/>
+                                                </constraints>
+                                                <mutableString key="text">알지에서는 국세청과 관련하여 ｢개인정보보호법」제15조 제1항 제1호, 제17조 제1항 제1호, 제23조 제1호, 제24조 제1항 제1호 및「신용정보의 이용 및 보호에 관한 법률」제32조제1항, 제33조, 제34조에 따라 아래와 같이 개인정보의 이용 및 제3자 제공에 관하여 귀하의 동의를 얻고자 합니다.
+
+1. 개인정보 이용에 관한 사항
+
+□ 개인정보 이용 목적
+알지 어플리케이션과 관련한 운영·관리를 목적으로 합니다.
+
+□ 이용할 항목
+사업자등록, 현금영수증, 전자세금계산서, 원천세, 부가가치세, 종합소득세, 양도소득세, 종합부동산세, 근로/자녀 장려금, 모의계산, 민원증명, 소비제세, 공익법인공시, 연말정산간소화, 법인세, 수출실적명세서, 증여세, 신용카드 매출자료, 현지기업고유번호, 구매확인서, 주류면서상태, 민간보조금  
+
+□ 보유‧이용기간
+ 위 개인정보는 수집‧이용에 관한 동의일로부터 보유목적 달성 시 또는 정보주체가 개인정보 삭제를 요청할 경우 지체 없이 파기합니다. 
+ 단, 사업 종료일 후에는 향후 정부지원사업 신청 시의 이력관리만을 위하여 보유‧이용되며 기간은 1년입니다.(공공기록물 관리에 관한 법률 시행령)
+
+□ 동의를 거부할 권리 및 동의를 거부할 경우의 불이익
+ 위 개인정보 중 필수항목의 수집‧이용에 관한 동의는 본사업의 수행을 위해 필수적이므로 이에 동의하셔야 이후 절차를 진행할 수 있습니다. 다만 동의하지 않으시는 경우 본 지원사업에 신청이 불가합니다.
+
+2. 제3자 제공에 관한 사항
+
+□ 제공받는 자
+ 알지, 정부지원사업 운영처
+
+□ 제공받는 자의 이용 목적
+ 이용자의 정부 지원 사업 지원
+
+□ 제공할 개인정보의 항목
+ 수집·이용에 동의한 정보 중 위탁업무 목적달성을 위해 필요한 정보에 한함
+
+□ 제공받은 자의 개인 정보 보유‧이용 기간
+ 위 개인정보는 제공된 날부터 1년간 보유·이용되며 보유목적 달성 시 또는 정보주체가 개인정보 삭제를 요청할 경우 지체 없이 파기합니다.
+
+□ 동의를 거부할 권리 및 동의를 거부할 경우의 불이익
+ 위 개인정보의 제공 동의를 거부할 권리가 있으며, 동의를 거부 시 본 지원사업에 신청이 불가합니다. </mutableString>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="XTc-8o-oSB" firstAttribute="centerY" secondItem="TOs-4d-6R7" secondAttribute="centerY" id="EWP-ad-C5r"/>
+                                            <constraint firstItem="TOs-4d-6R7" firstAttribute="centerX" secondItem="RgY-Wb-25O" secondAttribute="centerX" id="Qdg-K3-pEI"/>
+                                            <constraint firstItem="tJF-kE-Wgt" firstAttribute="centerX" secondItem="RgY-Wb-25O" secondAttribute="centerX" id="dfP-u6-Cg1"/>
+                                            <constraint firstItem="XTc-8o-oSB" firstAttribute="leading" secondItem="TOs-4d-6R7" secondAttribute="trailing" constant="15" id="jZp-2f-tqQ"/>
+                                            <constraint firstAttribute="bottom" secondItem="tJF-kE-Wgt" secondAttribute="bottom" constant="80" id="mSs-Es-iuW"/>
+                                            <constraint firstItem="TOs-4d-6R7" firstAttribute="top" secondItem="RgY-Wb-25O" secondAttribute="top" constant="23" id="mTB-Xk-TJ9"/>
+                                            <constraint firstItem="tJF-kE-Wgt" firstAttribute="top" secondItem="TOs-4d-6R7" secondAttribute="bottom" constant="25" id="yre-NA-oTs"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="RgY-Wb-25O" firstAttribute="height" secondItem="T1P-zF-h3J" secondAttribute="height" priority="250" id="380-PN-91T"/>
+                                    <constraint firstAttribute="bottom" secondItem="RgY-Wb-25O" secondAttribute="bottom" id="667-Qj-2Hl"/>
+                                    <constraint firstItem="RgY-Wb-25O" firstAttribute="width" secondItem="T1P-zF-h3J" secondAttribute="width" id="IC7-AZ-0ZM"/>
+                                    <constraint firstAttribute="trailing" secondItem="RgY-Wb-25O" secondAttribute="trailing" id="K18-0O-4Px"/>
+                                    <constraint firstItem="RgY-Wb-25O" firstAttribute="leading" secondItem="T1P-zF-h3J" secondAttribute="leading" id="Kon-oa-fYp"/>
+                                    <constraint firstItem="RgY-Wb-25O" firstAttribute="top" secondItem="T1P-zF-h3J" secondAttribute="top" id="T7e-In-Pcd"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jby-69-rMZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jby-69-rMZ" firstAttribute="trailing" secondItem="T1P-zF-h3J" secondAttribute="trailing" id="9F0-Gh-NRE"/>
+                            <constraint firstItem="T1P-zF-h3J" firstAttribute="top" secondItem="jby-69-rMZ" secondAttribute="top" id="ReT-L9-mGn"/>
+                            <constraint firstItem="jby-69-rMZ" firstAttribute="bottom" secondItem="T1P-zF-h3J" secondAttribute="bottom" id="dGo-ic-Nv4"/>
+                            <constraint firstItem="T1P-zF-h3J" firstAttribute="leading" secondItem="jby-69-rMZ" secondAttribute="leading" id="iSJ-0J-SvS"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0P0-Ig-sjA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2057" y="-791"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="4235" width="375" height="812"/>
+        <image name="checkmark.square" catalog="system" width="128" height="114"/>
+        <image name="checkmark.square.fill" catalog="system" width="128" height="114"/>
+        <image name="chevron.right" catalog="system" width="96" height="128"/>
+        <image name="minus.circle" catalog="system" width="128" height="121"/>
+        <image name="plus.circle" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
